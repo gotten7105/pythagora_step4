@@ -163,6 +163,8 @@ export default function QrcodeReaderComponent() {
                                 value={quantity}
                                 onChange={handleQuantityChange}
                                 onBlur={handleQuantityBlur}
+                                min="1"
+                                max="99"
                                 style={{ width: '3em' }}
                             />
                             <button onClick={handleEditQuantity}>数量変更</button> {/* 数量変更ボタン */}
