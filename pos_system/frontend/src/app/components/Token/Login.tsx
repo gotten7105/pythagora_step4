@@ -4,6 +4,8 @@ import { useCookies } from 'react-cookie';
 
 export default function Login() {
     const formRef = useRef();
+    const [pastcookies, pastsetCookie] = useCookies(['dummy']);
+    pastsetCookie('dummy', 1);
     const [cookies, setCookie] = useCookies(['access_token', 'user_name']);
 
     const handleSend = async (event: any) => {
